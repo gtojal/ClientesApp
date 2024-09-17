@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QBsgZLM91xsuqADmS7AztAGX+8ukmIpCWZC+VZJ8gP9bIhM8owU5K2Su5NW3/RorglMRs74Jj+hQ0kZoVbvoWA==",
+  "success": true,
+  "projectFilePath": "C:\\projetos\\dotNet\\ClientesApp\\ClientesApp.Infra.Data.SqlServer\\ClientesApp.Infra.Data.SqlServer.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://10.10.0.190:61775/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}

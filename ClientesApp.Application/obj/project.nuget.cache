@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "QVcJSAK0rYQMfJkhnF4uSXFISRwn2BD9ShSlnco2BIBQJExBjIbeJLn80TUBsw6f13lWNZ7sUWTPYHQlTccQvQ==",
+  "success": true,
+  "projectFilePath": "C:\\projetos\\dotNet\\ClientesApp\\ClientesApp.Application\\ClientesApp.Application.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1803",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Você está executando a operação 'restore' com uma fonte 'HTTP', 'http://10.10.0.190:61775/nuget'. O acesso não HTTPS será removido em uma versão futura. Considere migrar para uma fonte 'HTTPS'."
+    }
+  ]
+}
