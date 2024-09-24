@@ -25,11 +25,10 @@ namespace ClientesApp.API.Controllers
             return Ok();
         }
 
-
         [HttpGet]
         public async Task<IActionResult> Get()
-        {  
-            return Ok(); 
+        {
+            return Ok();
         }
     }
 }
