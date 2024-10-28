@@ -13,7 +13,6 @@ namespace ClientesApp.Infra.Data.SqlServer.Repositories
     public abstract class BaseRepository<TEntity, TKey> : IBaseRepository<TEntity, TKey>
         where TEntity : class
     {
-
         private readonly DataContext _dataContext;
 
         protected BaseRepository(DataContext dataContext)
@@ -31,7 +30,6 @@ namespace ClientesApp.Infra.Data.SqlServer.Repositories
         {
             _dataContext.Update(entity);
             await _dataContext.SaveChangesAsync();
-
         }
 
         public virtual async Task DeleteAsync(TEntity entity)
@@ -47,7 +45,7 @@ namespace ClientesApp.Infra.Data.SqlServer.Repositories
 
         public virtual async Task<TEntity?> GetOneAsync(Expression<Func<TEntity, bool>> where)
         {
-            return await _dataContext.Set<TEntity>().FirstOrDefaultAsync();
+            return await _dataContext.Set<TEntity>().FirstOrDefaultAsync(where);
         }
 
         public virtual async Task<TEntity?> GetByIdAsync(TKey id)
@@ -55,9 +53,14 @@ namespace ClientesApp.Infra.Data.SqlServer.Repositories
             return await _dataContext.Set<TEntity>().FindAsync(id);
         }
 
+        public virtual async Task<bool> VerifyExistsAsync(Expression<Func<TEntity, bool>> where)
+        {
+            return await _dataContext.Set<TEntity>().AnyAsync(where);
+        }
+
         public virtual void Dispose()
         {
-            _dataContext?.Dispose();
+            _dataContext.Dispose();
         }
     }
 }

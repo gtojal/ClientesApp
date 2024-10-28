@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "xUlBm4+92Og=",
+  "dgSpecHash": "OUBMDcMqG64=",
   "success": true,
   "projectFilePath": "C:\\projetos\\dotNet\\ClientesApp\\ClientesApp.Domain\\ClientesApp.Domain.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "C:\\Users\\Tojal\\.nuget\\packages\\fluentvalidation\\11.10.0\\fluentvalidation.11.10.0.nupkg.sha512",
+    "C:\\Users\\Tojal\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512"
+  ],
   "logs": [
     {
       "code": "NU1803",
